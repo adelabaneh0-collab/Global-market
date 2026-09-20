@@ -1,7 +1,7 @@
 
 import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js'
 import {products, getProduct} from '../data/products-data.js';
-import {formatCurrency} from '../utils/gb-money.js';
+
 
 export let cart;
  loadFromStorage();
