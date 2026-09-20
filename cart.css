@@ -1,0 +1,331 @@
+/* Base settings for dark look */
+body {
+  background-color: #0A0A0C;
+  color: #F0EDE8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page title alignment */
+.title {
+  max-width: 1200px;
+  margin: 40px auto 40px auto;
+  padding: 0 20px;
+}
+
+.title p {
+  font-size: 48px;
+  font-weight: bold;
+  color: #F0EDE8;
+  margin: 0;
+}
+
+/* Main screen wrap to separate products and summary layout side by side */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Parent container holding left side grid and right side module */
+#cartMainGrid, .order-summary-div {
+  display: block;
+}
+
+/* Wrap your layout structures using a main flex row container setup */
+/* You can safely wrap your elements in a row layout container using CSS */
+.cart-main-grid {
+  max-width: 1200px;
+  margin: 20px auto 100px auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  align-items: start;
+}
+
+.check-out-main-grid{
+  max-width: 1200px;
+  margin: 20px auto 100px auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+
+  align-items: start;
+}
+
+
+
+
+.quantity-label{
+background-color:black;color:white;opacity:0.77;border:none;padding-right:5px;padding-left:5px;padding-top:5px;padding-bottom:5px;font-size:17px;height:32px;width:120px;cursor:pointer;
+}
+.qantity-label-span{
+background-color:black;color:white;opacity:0.77;border:none;padding-right:5px;padding-left:5px;padding-top:5px;padding-bottom:5px;font-size:17px;height:32px;width:120px;cursor:pointer;
+}
+
+
+
+/* Left Grid Content Box */
+.cart-table-header {
+  display: grid;
+  grid-template-columns: 1fr 120px 100px;
+  border-bottom: 1px solid #1C1C21;
+  padding-bottom: 12px;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: #52525B;
+  font-weight: 600;
+}
+
+.header-price {
+  text-align: right;
+}
+
+/* Product rows style from Figma design */
+.cart-product-outer-div {
+  display: grid;
+  grid-template-columns: 1fr 120px 100px;
+  align-items: center;
+  border-bottom: 1px solid #1C1C21;
+  padding: 24px 0;
+}
+
+.cp-left-block {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.cp-img-div {
+  width: 90px;
+  height: 90px;
+  background-color: #111114;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cp-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.cp-descreption-brand-name {
+  font-size: 11px;
+  color: #C9993A;
+  letter-spacing: 1px;
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+
+.cp-descreption-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #F0EDE8;
+  margin: 0 0 6px 0;
+}
+
+.cp-descreption-catigory {
+  font-size: 13px;
+  color: #71717A;
+  margin: 0;
+}
+
+/* Figma Quantity Box Design styling */
+.quantity-control-container {
+  display: inline-flex;
+  border: 1px solid #27272A;
+  background-color: #111114;
+  height: 36px;
+  align-items: center;
+}
+
+.quantity-btn {
+  background: none;
+  border: none;
+  color: #71717A;
+  width: 30px;
+  height: 100%;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.quantity-btn:hover {
+  color: #F0EDE8;
+}
+
+.cp-quantity-input {
+  width: 30px;
+  border: none;
+  background: none;
+  color: #F0EDE8;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  -moz-appearance: textfield;
+}
+
+.cp-quantity-input::-webkit-outer-spin-button,
+.cp-quantity-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Right price / trash segment configuration */
+.cp-price-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.cp-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #F0EDE8;
+  margin: 0;
+}
+
+.cp-price-delete-button {
+  background: none;
+  border: none;
+  color: #52525B;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+}
+
+.cp-price-delete-button:hover {
+  color: #EF4444;
+}
+
+
+ 
+
+
+
+/* Order Summary Window container block right card styling */
+.order-summary-div {
+  height:95%;
+  width:95.5%;
+  background-color: #0F0F12;
+  border: 1px solid #1C1C21;
+  padding: 30px;
+
+}
+
+.os-top-div p {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* Promo box styling matches screenshot layout */
+.os-top-div div:last-child {
+  display: flex;
+  border: 1px solid #27272A;
+  background-color: #111114;
+  margin-bottom: 30px;
+}
+
+.promo-code-input {
+  background: none;
+  border: none;
+  padding: 12px;
+  color: #F0EDE8;
+  font-size: 13px;
+  flex-grow: 1;
+  outline: none;
+}
+
+.promo-code-button {
+  background: none;
+  border: none;
+  border-left: 1px solid #27272A;
+  color: #F0EDE8;
+  padding: 0 16px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Calculation item breakdown spacing rows */
+.os-middle-div {
+  border-bottom: 1px solid #1C1C21;
+  padding-bottom: 20px;
+  margin-bottom: 24px;
+}
+
+.os-middle-div > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+/* Grand Total Row style spacing */
+.os-bottom-div > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Dynamic button layouts standard */
+.os-bottom-div button {
+  width: 100%;
+  height: 48px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.os-bottom-div button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Marketing tag row features text layout */
+.os-marketing-words-div div {
+  justify-content: center;
+  margin-top: 24px;
+  border-top: 1px solid #1C1C21;
+  padding-top: 20px;
+}
+
+
+.empty-cart-div{display:block;text-align:center;}
+.empty-cart-p{font-size:23px;}
+
+
+
+
+.modal-add-cart-btn:hover{opacity:0.7}
+.modal-add-cart-btn:active{opacity:0.4}
+
+.secure-checkout-link{color:black;text-decoration:none}
+ 
+
+
+
+
+
+
+
+
